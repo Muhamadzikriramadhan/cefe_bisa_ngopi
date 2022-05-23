@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivityTransaksi"
+    android:divider="@drawable/spacing"
+    android:showDividers="middle"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:id="@+id/list"/>
+
+    <EditText
+        android:id="@+id/editTextIdTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/text"
+        android:hint="ID TRANSAKSI"
+        />
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="MENU" />
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="TOTAL"/>
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextIdKasir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="ID KASIR"/>
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextTimeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="TIME DATE"/>
+    <Button
+        android:background="@drawable/btn"
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan"/>
+</LinearLayout>

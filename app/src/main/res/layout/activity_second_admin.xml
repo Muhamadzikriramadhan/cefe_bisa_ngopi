@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivityAdmin"
+    android:divider="@drawable/spacing"
+    android:showDividers="middle"
+    android:gravity="center"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/editTextIdUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/text"
+        android:hint="ID USER"
+        />
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextNamaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="NAMA USER" />
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextPasswordUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="PASSWORD USER"/>
+    <EditText
+        android:background="@drawable/text"
+        android:id="@+id/editTextTypeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:hint="TYPE USER"/>
+    <Button
+        android:background="@drawable/btn"
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/drawable/btn.xml" value="0.169" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/drawable/ic_cafe.xml" value="0.2195" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/drawable/spacing.xml" value="0.169" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/drawable/text.xml" value="0.169" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_admin.xml" value="0.22" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_kasir.xml" value="0.33" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_manajer.xml" value="0.22447916666666667" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_secon_transaksi.xml" value="0.22447916666666667" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_second.xml" value="0.22447916666666667" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_second_admin.xml" value="0.22447916666666667" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/activity_second_transaksi.xml" value="0.25" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/list_akun.xml" value="0.22" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/list_items.xml" value="0.22447916666666667" />
+        <entry key="..\:/project_android1/cefe_bisa_ngopi/app/src/main/res/layout/list_transaksi.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

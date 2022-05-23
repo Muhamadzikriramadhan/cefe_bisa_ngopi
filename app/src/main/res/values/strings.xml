@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cefe_bisa_ngopi</string>
+    <string-array name="type">
+        <item></item>
+        <item>admin</item>
+        <item>kasir</item>
+        <item>manajer</item>
+    </string-array>
+    <string name="btn_Create">tambah</string>
+</resources>
