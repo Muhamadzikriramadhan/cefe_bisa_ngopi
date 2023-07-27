@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText namaUser, passwordUser;
     private Button btn_login;
     Spinner spinner;
-    Switch active;
 
 
     @Override
@@ -33,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         namaUser = findViewById(R.id.namaUser);
         passwordUser = findViewById(R.id.passwordUser);
         btn_login = findViewById(R.id.btn_login);
-        active = findViewById(R.id.active);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,31 +44,18 @@ public class MainActivity extends AppCompatActivity {
                         String input2 = passwordUser.getText().toString();
                         if (datasnapshot.child(input1).exists()) {
                             if (datasnapshot.child(input1).child("passwordUser").getValue(String.class).equals(input2)) {
-                                if (active.isChecked()) {
-                                    if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("admin")) {
-                                        preferences.setDataLogin(MainActivity.this, true);
-                                        preferences.setDataAs(MainActivity.this, "admin");
-                                        startActivity(new Intent(MainActivity.this, AdminActivity.class));
-                                    } else if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("kasir")){
-                                        preferences.setDataLogin(MainActivity.this, true);
-                                        preferences.setDataAs(MainActivity.this, "kasir");
-                                        startActivity(new Intent(MainActivity.this, KasirActivity.class));
-                                    } else if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("manajer")){
-                                        preferences.setDataLogin(MainActivity.this, true);
-                                        preferences.setDataAs(MainActivity.this, "manajer");
-                                        startActivity(new Intent(MainActivity.this, ManajerActivity.class));
-                                    }
-                                } else {
-                                    if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("admin")) {
-                                        preferences.setDataLogin(MainActivity.this, false);
-                                        startActivity(new Intent(MainActivity.this, AdminActivity.class));
-                                    } else if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("kasir")) {
-                                        preferences.setDataLogin(MainActivity.this, false);
-                                        startActivity(new Intent(MainActivity.this, KasirActivity.class));
-                                    } else if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("manajer")) {
-                                        preferences.setDataLogin(MainActivity.this, false);
-                                        startActivity(new Intent(MainActivity.this, ManajerActivity.class));
-                                    }
+                                if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("admin")) {
+                                    preferences.setDataLogin(MainActivity.this, true);
+                                    preferences.setDataAs(MainActivity.this, "admin");
+                                    startActivity(new Intent(MainActivity.this, AdminActivity.class));
+                                } else if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("kasir")){
+                                    preferences.setDataLogin(MainActivity.this, true);
+                                    preferences.setDataAs(MainActivity.this, "kasir");
+                                    startActivity(new Intent(MainActivity.this, KasirActivity.class));
+                                } else if (datasnapshot.child(input1).child("typeUser").getValue(String.class).equals("manajer")){
+                                    preferences.setDataLogin(MainActivity.this, true);
+                                    preferences.setDataAs(MainActivity.this, "manajer");
+                                    startActivity(new Intent(MainActivity.this, ManajerActivity.class));
                                 }
 
                             } else {

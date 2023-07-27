@@ -39,6 +39,7 @@ public class ManajerActivity extends AppCompatActivity {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(list.getContext(), new LinearLayoutManager(this).getOrientation());
         list.addItemDecoration(dividerItemDecoration);
         list.setLayoutManager(new LinearLayoutManager(this));
+        arrayList.clear();
         list.setAdapter(new ListAdapter(arrayList,this ));
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override

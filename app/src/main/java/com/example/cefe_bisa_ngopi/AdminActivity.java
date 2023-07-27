@@ -40,6 +40,7 @@ public class AdminActivity extends AppCompatActivity {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(list_akun.getContext(), new LinearLayoutManager(this).getOrientation());
         list_akun.addItemDecoration(dividerItemDecoration);
         list_akun.setLayoutManager(new LinearLayoutManager(this));
+        arrayList.clear();
         list_akun.setAdapter(new ListAdapterAkun(arrayList,this ));
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override

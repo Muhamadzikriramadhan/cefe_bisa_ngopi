@@ -40,6 +40,7 @@ public class KasirActivity extends AppCompatActivity {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(list_transaksi.getContext(), new LinearLayoutManager(this).getOrientation());
         list_transaksi.addItemDecoration(dividerItemDecoration);
         list_transaksi.setLayoutManager(new LinearLayoutManager(this));
+        arrayList.clear();
         list_transaksi.setAdapter(new ListAdapterTransaksi(arrayList,this ));
         btn_createTransaksi.setOnClickListener(new View.OnClickListener() {
             @Override
